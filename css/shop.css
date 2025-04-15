@@ -1,0 +1,149 @@
+:root{
+    --theme-color:#0aad0a;
+    --hover-color:#088a08;
+    --text-dark:#21313c;
+    --p-color:#5c6c75;
+    --tex-dark-sec:rgb(0 30 43);
+    --bg-footr:#F0F3F2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter 24pt';
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 14px;
+}
+h2{
+    color: var(--tex-dark-sec);
+}
+h3 , h4 , h5 , h6{
+    color: var(--text-dark);
+}
+p{
+    color: var(--p-color);
+    font-size: 14px;
+}
+.w-5{
+    width: 20%;
+}
+/* header */
+header .header-top select{
+    border: none;
+    font-size: 14px;
+    color: var(--p-color);
+}
+header .header-top select:hover{
+    color: var(--theme-color) !important;
+}
+header .header-middle .header-search input{
+    font-size: 14px;
+    border: none;
+    color: var(--p-color);
+    width: 453px;
+}
+header .header-middle .header-search input:focus{
+    outline: none !important;
+}
+header .header-middle .header-search form:hover {
+    box-shadow: var(--theme-color) 0px 3px 8px;
+}
+header .header-middle ul li span{
+    font-size: 10px;
+    background-color: var(--theme-color);
+    padding: 0px 4px;
+}
+header .header-middle ul li:nth-child(1) span{
+    top: -2px;
+    right: 12px;
+}
+header .header-middle ul li:nth-child(3) span{
+    top: -2px;
+    right: -6px;
+}
+header .header-main .header-main-button a{
+    padding: 9px 24px;
+    background-color: var(--theme-color);
+}
+header .header-main .header-main-button a:hover , header .header-main nav ul li a:hover{
+    color: var(--hover-color);
+}
+
+/* shop */
+.shop .shop-product-info h6{
+    color: var(--tex-dark-sec);
+    font-size: 14px;
+}
+.shop .shop-product-info .shop-name h6 span{
+    font-size: 12px !important;
+}
+.shop .shop-button a:nth-child(1){
+    background-color: var(--theme-color);
+}
+.shop .shop-button a:nth-child(1):hover{
+    background-color: var(--hover-color);
+}
+.shop .shop-button a:nth-child(2){
+    background-color: var(--tex-dark-sec);
+}
+.shop .shop-button a:nth-child(2):hover{
+    background-color: var(--text-dark);
+}
+.shop .shop-summary h2{
+    font-size: 17px;
+}
+.shop .shop-summary h4{
+    font-size: 14px;
+    color: var(--tex-dark-sec);
+}
+.shop .shop-summary .purchase-button{
+    background-color: var(--theme-color);
+}
+.shop .shop-summary .purchase-button:hover{
+    background-color: var(--hover-color);
+    transition-duration: 0.5s;
+}
+.shop .shop-summary .purchase-button h3{
+    font-size: 17px;
+}
+.shop .shop-summary p{
+    font-size: 12px;
+}
+.shop .shop-summary p a{
+    color: var(--theme-color);
+}
+.shop .shop-summary .redeem a{
+    color: var(--tex-dark-sec);
+    border: 1px solid var(--tex-dark-sec) !important;
+}
+.shop .shop-summary .redeem a:hover{
+    color: white;
+    background-color: var(--tex-dark-sec);
+    transition-duration: 0.5s;
+}
+
+/* footer */
+footer{
+    background-color: var(--bg-footr);
+}
+footer h6{
+    font-size: 15px;
+}
+footer a{
+    color: var(--p-color);
+}
+footer a:hover{
+    color: var(--hover-color);
+    transition-duration: 0.5s;
+}
+.copiright p span a{
+    color: var(--theme-color);
+}

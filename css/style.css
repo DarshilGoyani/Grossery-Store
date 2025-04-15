@@ -1,0 +1,311 @@
+:root{
+    --theme-color:#0aad0a;
+    --hover-color:#088a08;
+    --text-dark:#21313c;
+    --p-color:#5c6c75;
+    --tex-dark-sec:rgb(0 30 43);
+    --bg-footr:#F0F3F2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter 24pt';
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 14px;
+}
+h2{
+    color: var(--tex-dark-sec);
+}
+h3 , h4 , h5 , h6{
+    color: var(--text-dark);
+}
+p{
+    color: var(--p-color);
+    font-size: 14px;
+}
+.w-5{
+    width: 20%;
+}
+/* header */
+header .header-top select{
+    border: none;
+    font-size: 14px;
+    color: var(--p-color);
+}
+header .header-top select:hover{
+    color: var(--theme-color) !important;
+}
+header .header-middle .header-search input{
+    font-size: 14px;
+    border: none;
+    color: var(--p-color);
+    width: 453px;
+}
+header .header-middle .header-search input:focus{
+    outline: none !important;
+}
+header .header-middle .header-search form:hover {
+    box-shadow: var(--theme-color) 0px 3px 8px;
+}
+header .header-middle ul li span{
+    font-size: 10px;
+    background-color: var(--theme-color);
+    padding: 0px 4px;
+}
+header .header-middle ul li:nth-child(1) span{
+    top: -2px;
+    right: 12px;
+}
+header .header-middle ul li:nth-child(3) span{
+    top: -2px;
+    right: -6px;
+}
+header .header-middle .modal input{
+    border: 1px solid rgb(227, 225, 225);
+}
+header .header-middle .modal input , header .header-middle .modal input::placeholder{
+    font-size: 14px;
+}
+header .header-middle .modal input:focus{
+    outline: none;
+}
+header .header-middle p a{
+    color: var(--theme-color);
+}
+header .modal .modal-header{
+    border-bottom: none;
+}
+header .header-middle .modal p , header .header-middle .modal p a{
+    font-size: 12px;
+}
+header .modal .modal-body form .sign-up-btn{
+    background-color: var(--theme-color);
+    border-radius: 5px;
+}
+header .header-main .header-main-button a{
+    padding: 9px 24px;
+    background-color: var(--theme-color);
+}
+header .header-main .header-main-button a:hover , header .header-main nav ul li a:hover{
+    color: var(--hover-color);
+}
+
+/* banner */
+.banner .slider-1 , .banner .slider-2{
+    background-image: url(../images/slide-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+}
+.banner .slider-2{
+    background-image: url(../images/slide-2.jpg);
+}
+.banner .banner-title{
+    padding: 128px 32px 128px 64px;
+}
+.banner .banner-title h6{
+    font-size: 10px;
+}
+.banner .banner-title h1{
+    font-size: 48px;
+}
+.banner .banner-title h1 span{
+    color: var(--theme-color);
+}
+.banner .banner-title p{
+    font-size: 17px;
+}
+.banner .banner-title a , .offer .offer-item a , .offer .offer-item-2 a{
+    background-color: var(--tex-dark-sec);
+}
+.banner .banner-title a:hover , .offer .offer-item a:hover , .offer .offer-item-2 a:hover{
+    background-color: var(--text-dark);
+    transition-duration: 0.2s;
+}
+.banner .carousel-indicators [data-bs-target]{
+    background-color: var(--p-color);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.banner .carousel-indicators .active{
+    background-color: var(--text-dark);
+}
+
+/* catagori */
+.categori .categori-type h6{
+    font-size: 14px;
+}
+.categori .categori-type:hover{
+    border: 1px solid var(--hover-color) !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition-duration: 0.5s;
+}
+.carousel-control-next , .carousel-control-prev{
+    width: 24px !important;
+    height: 24px !important;
+    background-color: var(--bg-footr) !important;
+    color: var(--p-color) !important;
+    width: 32px !important;
+    border-radius: 50%;
+    padding: 15px 0px;
+    opacity: 1;
+}
+.carousel-control-next:hover , .carousel-control-prev:hover{
+    background-color: var(--theme-color) !important;
+    color: white !important;
+    transition-duration: 1s !important;
+}
+.carousel-control-next{
+    left: 96%;
+    top: -57px;
+} 
+.carousel-control-prev{
+    left: 92%;
+    top: -57px;
+}
+
+/* offer */
+.offer .offer-item , .offer .offer-item-2{
+    background-image: url(../images/grocery-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 210px;
+}
+.offer .offer-item-2{
+    background-image: url(../images/grocery-banner-2.jpg) !important;
+}
+
+/* popular product */
+.poproduct .poproduct-type:hover , .best-sells .best-sells-type:hover{
+    border: 1px solid var(--hover-color) !important;
+    transition-duration: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.poproduct .poproduct-type:hover ul , .best-sells .best-sells-type:hover ul{
+    opacity: 1 !important;
+}
+.best-sells .best-sells-type ul li:hover a i{
+    border: 1px solid var(--hover-color) !important;
+    background-color: var(--hover-color) !important;
+    color: white;
+    transition-duration: 0.5s;
+}
+.poproduct .poproduct-type .red-title , .poproduct .poproduct-type .green-title{
+    font-size: 10px;
+}
+.poproduct .poproduct-type .poproduct-content span i , .poproduct .poproduct-type .poproduct-content span p{
+    font-size: 12px;
+}
+.poproduct .poproduct-type .poproduct-content h5{
+    font-size: 14px;
+}
+.poproduct .poproduct-content .poproduct-button a , .best-sells .best-sells-button{
+    background-color: var(--theme-color);
+    font-size: 12px;
+}
+.poproduct .poproduct-content .poproduct-button a:hover{
+    background-color: var(--hover-color);
+}
+.poproduct .poproduct-content a:hover{
+    color: var(--hover-color);
+}
+.poproduct ul , .best-sells .best-sells-type ul{
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.poproduct ul li:hover a i{
+    color: white;
+    background-color: var(--hover-color) !important;
+    border-color: var(--hover-color) !important;
+    transition-duration: 0.5s;
+}
+
+/* best sells */
+.best-sells .best-sells-img{
+    background-image: url(../images/banner-deal.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 470px;
+    border-radius: 15px;
+} 
+.best-sells .best-sells-img h3{
+    font-size: 24px;
+}
+.best-sells .best-sells-img a{
+    background-color: var(--theme-color);
+}
+.best-sells .best-sells-img a:hover{
+    background-color: var(--hover-color);
+    transition-duration: 0.5s;
+}
+.best-sells .best-sells-content a:hover{
+    color: var(--hover-color) !important;
+}
+.best-sells .best-sells-content h5{
+    font-size: 14px;
+}
+.best-sells .best-sells-content span , .best-sells .best-sells-content span p{
+    font-size: 12px;
+}
+.best-sells .best-sells-button{
+    font-size: 14px;
+}
+.best-sells .best-sells-button:hover{
+    background-color: var(--hover-color);
+    transition-duration: 0.5s;
+}
+.best-sells-timer-type{
+    width: 50px;
+    height: 50px;
+}
+.best-sells-timer-type h6 , .best-sells-timer-type p{
+    font-size: 13px;
+}
+.best-sells .best-sells-type ul{
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* services */
+.services i{
+    color: var(--theme-color);
+}
+.services .services-item h3{
+    font-size: 18px !important;
+}
+
+/* footer */
+footer{
+    background-color: var(--bg-footr);
+}
+footer h6{
+    font-size: 15px;
+}
+footer a{
+    color: var(--p-color);
+}
+footer a:hover{
+    color: var(--hover-color);
+    transition-duration: 0.5s;
+}
+.copiright p span a{
+    color: var(--theme-color);
+}

@@ -1,0 +1,216 @@
+:root{
+    --theme-color:#0aad0a;
+    --hover-color:#088a08;
+    --text-dark:#21313c;
+    --p-color:#5c6c75;
+    --tex-dark-sec:rgb(0 30 43);
+    --bg-footr:#F0F3F2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter 24pt';
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 14px;
+}
+h2{
+    color: var(--tex-dark-sec);
+}
+h3 , h4 , h5 , h6{
+    color: var(--text-dark);
+}
+p{
+    color: var(--p-color);
+    font-size: 14px;
+}
+.w-5{
+    width: 20%;
+}
+main{
+    width: calc(100% - 290px);
+}
+/* header */
+header .header-top select{
+    border: none;
+    font-size: 14px;
+    color: var(--p-color);
+}
+header .header-top select:hover{
+    color: var(--theme-color) !important;
+}
+header .header-middle .header-search input{
+    font-size: 14px;
+    border: none;
+    color: var(--p-color);
+    width: 453px;
+}
+header .header-middle .header-search input:focus{
+    outline: none !important;
+}
+header .header-middle .header-search form:hover {
+    box-shadow: var(--theme-color) 0px 3px 8px;
+}
+header .header-middle ul li span{
+    font-size: 10px;
+    background-color: var(--theme-color);
+    padding: 0px 4px;
+}
+header .header-middle ul li:nth-child(1) span{
+    top: -2px;
+    right: 12px;
+}
+header .header-middle ul li:nth-child(3) span{
+    top: -2px;
+    right: -6px;
+}
+header .header-middle .modal input{
+    border: 1px solid rgb(227, 225, 225);
+}
+header .header-middle .modal input , header .header-middle .modal input::placeholder{
+    font-size: 14px;
+}
+header .header-middle .modal input:focus{
+    outline: none;
+}
+header .header-middle p a{
+    color: var(--theme-color);
+}
+header .modal .modal-header{
+    border-bottom: none;
+}
+header .header-middle .modal p , header .header-middle .modal p a{
+    font-size: 12px;
+}
+header .modal .modal-body form .sign-up-btn{
+    background-color: var(--theme-color);
+    border-radius: 5px;
+}
+header .header-main .header-main-button a{
+    padding: 9px 24px;
+    background-color: var(--theme-color);
+}
+header .header-main .header-main-button a:hover , header .header-main nav ul li a:hover{
+    color: var(--hover-color);
+}
+/* aside */
+aside{
+    width: 290px;
+}
+aside h5{
+    font-size: 18px;
+}
+aside .accordion-header:hover a ,aside .accordion-header:hover i , aside .accordion-collapse ul li a:hover{
+    color: var(--hover-color) !important;
+    transition-duration: 0.5s;
+}
+aside .accordion-collapse ul li a{
+    font-size: 14px;
+}
+aside input::placeholder{
+    font-size: 14px;
+}
+aside input:focus{
+    outline: none;
+}
+aside input{
+    border-style: solid;
+    font-size: 14px;
+}
+.form-check-input:checked{
+    background-color: #0aad0a !important;
+    fill:var(--theme-color) !important;
+    border-color: #0aad0a !important;
+}
+aside .aside-offer{
+    background-image: url(../images/assortment-citrus-fruits.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+}
+aside .aside-offer a:hover{
+    background-color: var(--text-dark)!important;
+}
+/* category */
+.category .category-filter p span{
+    color: var(--tex-dark-sec) !important;
+}
+.category select{
+    font-size: 14px;
+}
+.category select:focus{
+    outline: none;
+}
+
+.category .poproduct-type:hover , .best-sells .best-sells-type:hover{
+    border: 1px solid var(--hover-color) !important;
+    transition-duration: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.category .poproduct-type:hover ul , .best-sells .best-sells-type:hover ul{
+    opacity: 1 !important;
+}
+.best-sells .best-sells-type ul li:hover a i{
+    border: 1px solid var(--hover-color) !important;
+    background-color: var(--hover-color) !important;
+    color: white;
+    transition-duration: 0.5s;
+}
+.category .poproduct-type .red-title , .category .poproduct-type .green-title{
+    font-size: 10px;
+}
+.category .poproduct-type .poproduct-content span i , .category .poproduct-type .poproduct-content span p{
+    font-size: 12px;
+}
+.category .poproduct-type .poproduct-content h5{
+    font-size: 14px;
+}
+.category .poproduct-content .poproduct-button a , .best-sells .best-sells-button{
+    background-color: var(--theme-color);
+    font-size: 12px;
+}
+.category .poproduct-content .poproduct-button a:hover{
+    background-color: var(--hover-color);
+}
+.category .poproduct-content a:hover{
+    color: var(--hover-color);
+}
+.category ul , .best-sells .best-sells-type ul{
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.category ul li:hover a i{
+    color: white;
+    background-color: var(--hover-color) !important;
+    border-color: var(--hover-color) !important;
+    transition-duration: 0.5s;
+}
+
+/* footer */
+footer{
+    background-color: var(--bg-footr);
+}
+footer h6{
+    font-size: 15px;
+}
+footer a{
+    color: var(--p-color);
+}
+footer a:hover{
+    color: var(--hover-color);
+    transition-duration: 0.5s;
+}
+.copiright p span a{
+    color: var(--theme-color);
+}

@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Home Cart | FreshCart - eCommerce</title>
+    <!-- remix-icon -->
+    <link rel="stylesheet" href="remix-icon/remixicon.css" type="text/css">
+    <!-- inter font family -->
+    <link rel="stylesheet" href="fonts/inter-fonts/stylesheet.css" type="text/css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="header-top bg-light p-1">
+            <div class="container">
+                <div class="d-flex justify-content-between ">
+                    <p class="mb-0 fw-semibold">Super Value Deals - Save more with coupons</p>
+                    <div class="header-top-select">
+                        <img src="images/english.svg" class="img-fluid" alt="english" name="english">
+                        <select>
+                            <option>English</option>
+                            <option>Deutsch</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class="header-middle py-3 align-items-center">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="logo align-items-center justify-content-center">
+                        <img src="images/freshcart-logo.svg" class="img-fluid" alt="logo" name="logo">
+                    </div>
+                    <div class="header-search d-flex align-items-center">
+                        <form class="border rounded-3 py-2 px-3">
+                            <input type="text" class="" placeholder="Search for products">
+                            <a href="javascript:void(0)"><i class="ri-search-line"></i></a>
+                        </form>
+                        <a href="javascript:void(0)" class="py-2 ms-2 px-3 border rounded-3 text-body-secondary"><i class="ri-map-pin-line"></i> Location</a>
+                    </div>
+                    <ul class="d-flex ps-0 align-items-center justify-content-center text-center pt-3">
+                        <li class="position-relative"><a href="wishlist.html" class="text-dark"><i class="ri-heart-line fs-5 pe-3 text-body-tertiary "></i></a><span class="position-absolute rounded-circle fw-bold text-white">4</span></li>
+                        <li><a href="javascript:void(0)" class="text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="ri-user-3-line fs-5 me-3 text-body-tertiary"></i></a></li>
+                        <li class="position-relative"><a href="javascript:void(0)" class="text-dark"><i class="ri-shopping-bag-3-line fs-5 text-body-tertiary"></i></a><span class="position-absolute border rounded-circle fw-bold text-white">4</span></li></li>
+                    </ul>
+                                        <!-- Button trigger modal -->
+                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Launch demo modal
+                    </button> -->
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content p-4">
+                            <div class="modal-header pb-0">
+                            <h2 class="modal-title fw-semibold fs-5" id="exampleModalLabel">Sign Up</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="d-block w-100">
+                                        <label class="mb-2 mt-3">Name</label><br>
+                                        <input type="text" class="w-100 rounded-2 px-3 py-2 " placeholder="Enter Your Name">
+                                    </div>
+                                    <div class="d-block w-100">
+                                        <label class="mb-2 mt-3">Email address</label><br>
+                                        <input type="text" class="w-100 rounded-2 px-3 py-2 " placeholder="Enter Email Address">
+                                    </div>
+                                    <div class="d-block w-100">
+                                        <label class="mb-2 mt-3">Password</label><br>
+                                        <input type="password" class="w-100 rounded-2 px-3 py-2 " placeholder="Enter Password">
+                                    </div>
+                                    <p class="mt-1 mb-3">By Signup, you agree to our <a href="javascript:void(0)">Terms of Service</a> & <a href="javascript:void(0)">Privacy Policy</a></p>
+                                    <a href="javascript:void(0)" class="sign-up-btn text-white d-inline-block  mb-4 px-3 py-2 ">Sign Up</a>
+                                    <p class="text-center">Already have an account? <a href="sign-in.html">Sign in</a></p>
+                                </form>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main d-block col-12 w-100">
+            <div class="container">
+                <div class=" d-flex align-items-center">
+                    <div class="header-main-button">
+                        <a href="javascript:void(0)" class="text-white fw-semibold rounded d-inline-block">All Department</a>
+                    </div>
+                    <nav class="">
+                        <ul class="d-flex">
+                            <!-- <li><a href="javascript:void(0)" class="d-flex w-100">All Departments</a></li> -->
+                            <li class="pt-3"><a href="index.html" class="fw-semibold me-3 d-inline-block align-items-center">Home<i class="ri-arrow-down-s-line"></i></a></li>
+                            <li class="pt-3"><a href="shop.html" class="fw-semibold me-3 d-inline-block align-items-center">Shop<i class="ri-arrow-down-s-line"></i></a></li>
+                            <li class="pt-3"><a href="stores.html" class="fw-semibold me-3 d-inline-block align-items-center">Stores<i class="ri-arrow-down-s-line"></i></a></li>
+                            <li class="pt-3"><a href="javascript:void(0)" class="fw-semibold me-3 d-inline-block align-items-center">Mega menu<i class="ri-arrow-down-s-line"></i></a></li>
+                            <li class="pt-3"><a href="blog.html" class="fw-semibold me-3 d-inline-block align-items-center">Pages<i class="ri-arrow-down-s-line"></i></a></li>
+                            <li class="pt-3"><a href="javascript:void(0)" class="fw-semibold me-3 d-inline-block align-items-center">Account<i class="ri-arrow-down-s-line"></i></a></li>
+                            <li class="pt-3"><a href="javascript:void(0)" class="fw-semibold me-3 d-inline-block align-items-center">Dashboard</a></li>
+                            <li class="pt-3"><a href="javascript:void(0)" class="fw-semibold me-3 d-inline-block align-items-center">Docs</a></li>
+                         </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <!-- banner -->
+        <section class="banner">
+            <div class="container">
+                <div class="carousel slide" id="banner-slider" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#banner-slider" data-bs-slide-to="0" class="active" ></button>
+                        <button type="button" data-bs-target="#banner-slider" data-bs-slide-to="1" ></button>
+                      </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="slider-1 rounded rounded-4 mt-5">
+                                <div class="col-lg-7">
+                                    <div class="banner-title">
+                                        <h6 class="fw-bold p-2 border rounded-pill d-inline-block bg-warning">Opening Sale Discount 50%</h6>
+                                        <h1 class="fw-semibold">SuperMarket For Fresh Grocery</h1>
+                                        <p class="fw-semibold"> Introduced a new model for online grocery shopping and convenient home delivery.</p>
+                                        <a href="javascript:void(0)" class="fw-semibold px-3 py-3 mt-3 d-inline-block rounded-3 text-white ">Shop Now <i class="ri-arrow-right-long-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slider-2 rounded rounded-4 mt-5">
+                                <div class="col-lg-7">
+                                    <div class="banner-title">
+                                        <h6 class="fw-bold p-2 border rounded-pill d-inline-block bg-warning">Free Shipping - orders over $100</h6>
+                                        <h1 class="fw-semibold">Free Shipping on orders over <span>$100</span></h1>
+                                        <p class="fw-semibold"> Free Shipping to First-Time Customers Only, After promotions and discounts are applied.</p>
+                                        <a href="javascript:void(0)" class="fw-semibold px-3 py-3 mt-3 d-inline-block rounded-3 text-white ">Shop Now <i class="ri-arrow-right-long-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- categori -->
+        <section class="categori py-5 mb-4">
+            <div class="container">
+                <div class="categori-title" >
+                    <h3 class="fw-semibold mt-5 mb-3">Featured Categories</h3>
+                </div>
+                <div class="carousel slide" id="categori-slider" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="categori-type px-5 py-4 border rounded rounded-4">
+                                        <a href="category.html" class="text-center align-items-center justify-content-center align-self-center">
+                                            <img src="images/category-dairy-bread-eggs.jpg" class="img-fluid align-self-center mx-auto d-block" alt="category-type" name="category">
+                                            <h6 class="mt-3 fw-semibold text-body-tertiary">Dairy, Bread & Eggs</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="categori-type px-5 py-4 border rounded rounded-4">
+                                        <a href="category.html" class="text-center align-items-center justify-content-center align-self-center">
+                                            <img src="images/category-snack-munchies.jpg" class="img-fluid align-self-center mx-auto d-block" alt="category-type" name="category">
+                                            <h6 class="mt-3 fw-semibold text-body-tertiary">Snack & Munchies</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="categori-type px-5 py-4 border rounded rounded-4">
+                                        <a href="category.html" class="text-center align-items-center justify-content-center align-self-center">
+                                            <img src="images/category-bakery-biscuits.jpg" class="img-fluid align-self-center mx-auto d-block" alt="category-type" name="category">
+                                            <h6 class="mt-3 fw-semibold text-body-tertiary">Backery & Biscuitess</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="categori-type px-5 py-4 border rounded rounded-4">
+                                        <a href="category.html" class="text-center align-items-center justify-content-center align-self-center">
+                                            <img src="images/category-instant-food.jpg" class="img-fluid align-self-center mx-auto d-block" alt="category-type" name="category">
+                                            <h6 class="mt-3 fw-semibold text-body-tertiary">Instant Food</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="categori-type px-5 py-4 border rounded rounded-4">
+                                        <a href="category.html" class="text-center align-items-center justify-content-center align-self-center">
+                                            <img src="images/category-tea-coffee-drinks.jpg" class="img-fluid align-self-center mx-auto d-block" alt="category-type" name="category">
+                                            <h6 class="mt-3 fw-semibold text-body-tertiary">Tea, Coffee & Drinks</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="categori-type px-5 py-4 border rounded rounded-4">
+                                        <a href="category.html" class="text-center align-items-center justify-content-center align-self-center">
+                                            <img src="images/category-atta-rice-dal.jpg" class="img-fluid align-self-center mx-auto d-block" alt="category-type" name="category">
+                                            <h6 class="mt-3 fw-semibold text-body-tertiary">Atta, Rice & Dal</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="categori-type px-5 py-4 border rounded rounded-4">
+                                        <a href="category.html" class="text-center align-items-center justify-content-center align-self-center">
+                                            <img src="images/category-baby-care.jpg" class="img-fluid align-self-center mx-auto d-block" alt="category-type" name="category">
+                                            <h6 class="mt-3 fw-semibold text-body-tertiary">Baby Care</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="categori-type px-5 py-4 border rounded rounded-4">
+                                        <a href="category.html" class="text-center align-items-center justify-content-center align-self-center">
+                                            <img src="images/category-chicken-meat-fish.jpg" class="img-fluid align-self-center mx-auto d-block" alt="category-type" name="category">
+                                            <h6 class="mt-3 fw-semibold text-body-tertiary">Chicken, Meat & Fish</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="categori-type px-5 py-4 border rounded rounded-4">
+                                        <a href="category.html" class="text-center align-items-center justify-content-center align-self-center">
+                                            <img src="images/category-chicken-meat-fish.jpg" class="img-fluid align-self-center mx-auto d-block" alt="category-type" name="category">
+                                            <h6 class="mt-3 fw-semibold text-body-tertiary">Cleaning Essentials</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="categori-type px-5 py-4 border rounded rounded-4">
+                                        <a href="category.html" class="text-center align-items-center justify-content-center align-self-center">
+                                            <img src="images/category-pet-care.jpg" class="img-fluid align-self-center mx-auto d-block" alt="category-type" name="category">
+                                            <h6 class="mt-3 fw-semibold text-body-tertiary">Pet Care</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="categori-type px-5 py-4 border rounded rounded-4">
+                                        <a href="category.html" class="text-center align-items-center justify-content-center align-self-center">
+                                            <img src="images/category-fruits-vegetables.jpg" class="img-fluid align-self-center mx-auto d-block" alt="category-type" name="category">
+                                            <h6 class="mt-3 fw-semibold text-body-tertiary">Fruits & Vegetables</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="categori-type px-5 py-4 border rounded rounded-4">
+                                        <a href="category.html" class="text-center align-items-center justify-content-center align-self-center">
+                                            <img src="images/category-cold-drinks-juices.jpg" class="img-fluid align-self-center mx-auto d-block" alt="category-type" name="category">
+                                            <h6 class="mt-3 fw-semibold text-body-tertiary">Fruits & Vegetables</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="carousel-control-prev" data-bs-target="#categori-slider" data-bs-slide="prev">
+                        <i class="ri-arrow-left-s-line fs-3 "></i>
+                    </a>
+                    <a href="javascript:void(0)" class="carousel-control-next" data-bs-target="#categori-slider" data-bs-slide="next">
+                        <i class="ri-arrow-right-s-line fs-3 "></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- offer -->
+        <section class="offer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="offer-item rounded rounded-4 px-4 py-5">
+                            <h3 class="fw-semibold mb-1">Fruits & Vegetables</h3>
+                            <p class="fw-semibold">Get Upto 30% Off</p>
+                            <a href="javascript:void(0)" class="fw-semibold d-inline-block px-3 py-3 rounded-3 text-white">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="offer-item-2 rounded rounded-4 px-4 py-5">
+                            <h3 class="fw-semibold mb-1">Freshly Baked Buns</h3>
+                            <p class="fw-semibold">Get Upto 25% Off</p>
+                            <a href="javascript:void(0)" class="fw-semibold d-inline-block px-3 py-3 rounded-3 text-white">Shop Now</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- popular product -->
+        <section class="poproduct mt-5 mb-3 pt-5">
+            <div class="container">
+                <div class="poproduct-title">
+                    <h3 class="fw-semibold mb-3">Popular Products</h3>
+                </div>
+                <div class="row">
+                    <div class="w-5">
+                        <div class="poproduct-type mb-4 px-3 py-3 position-relative border rounded rounded-3 px-3 py-3 border rounded rounded-4">
+                            <div class="poproduct-offer position-absolute top-1 start-1">
+                                <h6 class="red-title bg-danger text-white d-inline-block mb-0 px-2 py-1 rounded-1">Sale</h6><br>
+                                <h6 class="green-title bg-success text-white d-inline-block px-2 py-1 rounded-1">10%</h6>
+                            </div>
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-1.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="poproduct-content">
+                                <p class="mb-0 fw-semibold">Snack & Munchies</p>
+                                <a href="javascript:void(0)" class="fw-semibold">Haldiram's Sev Bhujia</a><br>
+                                <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3 (5)</p></span>
+                                <div class="poproduct-button d-flex align-items-center justify-content-between">
+                                    <h5 class="fw-semibold ">$21.6 <del class="text-body-tertiary">$24</del></h5>
+                                    <a href="javascript:void(0)" class="fw-semibold d-inline-block px-2 py-1 rounded-3 text-white"><i class="ri-add-line"></i> Add</a>  
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-5">
+                        <div class="poproduct-type mb-4 px-3 py-3 position-relative border rounded rounded-3 px-3 py-3 border rounded rounded-4">
+                            <!-- <div class="poproduct-offer position-absolute top-1 start-1">
+                                <h6 class="red-title bg-danger text-white d-inline-block mb-0 px-2 py-1 rounded-1">Sale</h6><br>
+                                <h6 class="green-title bg-success text-white d-inline-block px-2 py-1 rounded-1">10%</h6>
+                            </div> -->
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-2.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="poproduct-content">
+                                <p class="mb-0 fw-semibold">Bakery & Biscuits</p>
+                                <a href="javascript:void(0)" class="fw-semibold">NutriChoice Digestive</a><br>
+                                <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3 (5)</p></span>
+                                <div class="poproduct-button d-flex align-items-center justify-content-between">
+                                    <h5 class="fw-semibold ">$24 <del class="text-body-tertiary">$24</del></h5>
+                                    <a href="javascript:void(0)" class="fw-semibold d-inline-block px-2 py-1 rounded-3 text-white"><i class="ri-add-line"></i> Add</a>  
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-5">
+                        <div class="poproduct-type mb-4 px-3 py-3 position-relative border rounded rounded-3 px-3 py-3 border rounded rounded-4">
+                            <div class="poproduct-offer position-absolute top-1 start-1">
+                                <h6 class="red-title bg-danger text-white d-inline-block mb-0 px-2 py-1 rounded-1">Buy 1 Get $4.00 Off</h6><br>
+                                <!-- <h6 class="green-title bg-success text-white d-inline-block px-2 py-1 rounded-1">10%</h6> -->
+                            </div>
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-3.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="poproduct-content">
+                                <p class="mb-0 fw-semibold">Bakery & Biscuits</p>
+                                <a href="javascript:void(0)" class="fw-semibold">Cadbury 5 Star Chocolate</a><br>
+                                <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3 (5)</p></span>
+                                <div class="poproduct-button d-flex align-items-center justify-content-between">
+                                    <h5 class="fw-semibold ">$35 <del class="text-body-tertiary">$35</del></h5>
+                                    <a href="javascript:void(0)" class="fw-semibold d-inline-block px-2 py-1 rounded-3 text-white"><i class="ri-add-line"></i> Add</a>  
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-5">
+                        <div class="poproduct-type mb-4 px-3 py-3 position-relative border rounded rounded-3 px-3 py-3 border rounded rounded-4">
+                            <div class="poproduct-offer position-absolute top-1 start-1">
+                                <h6 class="red-title bg-danger text-white d-inline-block mb-0 px-2 py-1 rounded-1">Hot</h6><br>
+                                <h6 class="green-title bg-success text-white d-inline-block px-2 py-1 rounded-1">40%</h6>
+                            </div>
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-4.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="poproduct-content">
+                                <p class="mb-0 fw-semibold">Snack & Munchies</p>
+                                <a href="javascript:void(0)" class="fw-semibold">Onion Flavour Potato</a><br>
+                                <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3 (5)</p></span>
+                                <div class="poproduct-button d-flex align-items-center justify-content-between">
+                                    <h5 class="fw-semibold ">$3 <del class="text-body-tertiary">$5</del></h5>
+                                    <a href="javascript:void(0)" class="fw-semibold d-inline-block px-2 py-1 rounded-3 text-white"><i class="ri-add-line"></i> Add</a>  
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-5">
+                        <div class="poproduct-type mb-4 px-3 py-3 position-relative border rounded rounded-3 px-3 py-3 border rounded rounded-4">
+                            <div class="poproduct-offer position-absolute top-1 start-1">
+                                <!-- <h6 class="red-title bg-danger text-white d-inline-block mb-0 px-2 py-1 rounded-1">Sale</h6><br> -->
+                                <h6 class="green-title bg-success text-white d-inline-block px-2 py-1 rounded-1">35%</h6>
+                            </div>
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-5.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="poproduct-content">
+                                <p class="mb-0 fw-semibold">Instant Food</p>
+                                <a href="javascript:void(0)" class="fw-semibold">Salted Instant Popcorn</a><br>
+                                <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3 (5)</p></span>
+                                <div class="poproduct-button d-flex align-items-center justify-content-between">
+                                    <h5 class="fw-semibold ">$11.7 <del class="text-body-tertiary">$18</del></h5>
+                                    <a href="javascript:void(0)" class="fw-semibold d-inline-block px-2 py-1 rounded-3 text-white"><i class="ri-add-line"></i> Add</a>  
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-5">
+                        <div class="poproduct-type mb-4 px-3 py-3 position-relative border rounded rounded-3 px-3 py-3 border rounded rounded-4">
+                            <div class="poproduct-offer position-absolute top-1 start-1">
+                                <h6 class="red-title bg-danger text-white d-inline-block mb-0 px-2 py-1 rounded-1">Buy 1 Get $4.00 Off</h6><br>
+                                <!-- <h6 class="green-title bg-success text-white d-inline-block px-2 py-1 rounded-1">10%</h6> -->
+                            </div>
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-3.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="poproduct-content">
+                                <p class="mb-0 fw-semibold">Bakery & Biscuits</p>
+                                <a href="javascript:void(0)" class="fw-semibold">Cadbury 5 Star Chocolate</a><br>
+                                <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3 (5)</p></span>
+                                <div class="poproduct-button d-flex align-items-center justify-content-between">
+                                    <h5 class="fw-semibold ">$35 <del class="text-body-tertiary">$35</del></h5>
+                                    <a href="javascript:void(0)" class="fw-semibold d-inline-block px-2 py-1 rounded-3 text-white"><i class="ri-add-line"></i> Add</a>  
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-5">
+                        <div class="poproduct-type mb-4 px-3 py-3 position-relative border rounded rounded-3 px-3 py-3 border rounded rounded-4">
+                            <div class="poproduct-offer position-absolute top-1 start-1">
+                                <h6 class="red-title bg-danger text-white d-inline-block mb-0 px-2 py-1 rounded-1">Sale</h6><br>
+                                <h6 class="green-title bg-success text-white d-inline-block px-2 py-1 rounded-1">10%</h6>
+                            </div>
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-1.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="poproduct-content">
+                                <p class="mb-0 fw-semibold">Snack & Munchies</p>
+                                <a href="javascript:void(0)" class="fw-semibold">Haldiram's Sev Bhujia</a><br>
+                                <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3 (5)</p></span>
+                                <div class="poproduct-button d-flex align-items-center justify-content-between">
+                                    <h5 class="fw-semibold ">$21.6 <del class="text-body-tertiary">$24</del></h5>
+                                    <a href="javascript:void(0)" class="fw-semibold d-inline-block px-2 py-1 rounded-3 text-white"><i class="ri-add-line"></i> Add</a>  
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-5">
+                        <div class="poproduct-type mb-4 px-3 py-3 position-relative border rounded rounded-3 px-3 py-3 border rounded rounded-4">
+                            <div class="poproduct-offer position-absolute top-1 start-1">
+                                <!-- <h6 class="red-title bg-danger text-white d-inline-block mb-0 px-2 py-1 rounded-1">Sale</h6><br> -->
+                                <h6 class="green-title bg-success text-white d-inline-block px-2 py-1 rounded-1">40%</h6>
+                            </div>
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-6.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="poproduct-content">
+                                <p class="mb-0 fw-semibold">Dairy, Bread & Eggs</p>
+                                <a href="javascript:void(0)" class="fw-semibold">Blueberry Greek Yogurt</a><br>
+                                <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3 (5)</p></span>
+                                <div class="poproduct-button d-flex align-items-center justify-content-between">
+                                    <h5 class="fw-semibold ">$14.4 <del class="text-body-tertiary">$24</del></h5>
+                                    <a href="javascript:void(0)" class="fw-semibold d-inline-block px-2 py-1 rounded-3 text-white"><i class="ri-add-line"></i> Add</a>  
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-5">
+                        <div class="poproduct-type mb-4 px-3 py-3 position-relative border rounded rounded-3 px-3 py-3 border rounded rounded-4">
+                            <!-- <div class="poproduct-offer position-absolute top-1 start-1">
+                                <h6 class="red-title bg-danger text-white d-inline-block mb-0 px-2 py-1 rounded-1">Sale</h6><br>
+                                <h6 class="green-title bg-success text-white d-inline-block px-2 py-1 rounded-1">10%</h6>
+                            </div> -->
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-7.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="poproduct-content">
+                                <p class="mb-0 fw-semibold">Dairy, Bread & Eggs</p>
+                                <a href="javascript:void(0)" class="fw-semibold text-inherit text-decoration-none">Britannia Cheese Slices</a><br>
+                                <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3 (5)</p></span>
+                                <div class="poproduct-button d-flex align-items-center justify-content-between">
+                                    <h5 class="fw-semibold ">$24<del class="text-body-tertiary"> $24</del></h5>
+                                    <a href="javascript:void(0)" class="fw-semibold d-inline-block px-2 py-1 rounded-3 text-white"><i class="ri-add-line"></i> Add</a>  
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-5">
+                        <div class="poproduct-type mb-4 px-3 py-3 position-relative border rounded rounded-3 px-3 py-3 border rounded rounded-4">
+                            <div class="poproduct-offer position-absolute top-1 start-1">
+                                <!-- <h6 class="red-title bg-danger text-white d-inline-block mb-0 px-2 py-1 rounded-1">Sale</h6><br> -->
+                                <h6 class="green-title bg-success text-white d-inline-block px-2 py-1 rounded-1">15%</h6>
+                            </div>
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-8.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="poproduct-content">
+                                <p class="mb-0 fw-semibold">Instant Food</p>
+                                <a href="javascript:void(0)" class="fw-semibold">Kellogg's Original Cereals</a><br>
+                                <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3 (5)</p></span>
+                                <div class="poproduct-button d-flex align-items-center justify-content-between">
+                                    <h5 class="fw-semibold ">$29.75 <del class="text-body-tertiary">$35</del></h5>
+                                    <a href="javascript:void(0)" class="fw-semibold d-inline-block px-2 py-1 rounded-3 text-white"><i class="ri-add-line"></i> Add</a>  
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-5">
+                        <div class="poproduct-type mb-4 px-3 py-3 position-relative border rounded rounded-3 px-3 py-3 border rounded rounded-4">
+                            <!-- <div class="poproduct-offer position-absolute top-1 start-1">
+                                <h6 class="red-title bg-danger text-white d-inline-block mb-0 px-2 py-1 rounded-1">Sale</h6><br>
+                                <h6 class="green-title bg-success text-white d-inline-block px-2 py-1 rounded-1">10%</h6>
+                            </div> -->
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-2.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="poproduct-content">
+                                <p class="mb-0 fw-semibold">Bakery & Biscuits</p>
+                                <a href="javascript:void(0)" class="fw-semibold">NutriChoice Digestive</a><br>
+                                <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3 (5)</p></span>
+                                <div class="poproduct-button d-flex align-items-center justify-content-between">
+                                    <h5 class="fw-semibold ">$24 <del class="text-body-tertiary">$24</del></h5>
+                                    <a href="javascript:void(0)" class="fw-semibold d-inline-block px-2 py-1 rounded-3 text-white"><i class="ri-add-line"></i> Add</a>  
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-5">
+                        <div class="poproduct-type mb-4 px-3 py-3 position-relative border rounded rounded-3 px-3 py-3 border rounded rounded-4">
+                            <!-- <div class="poproduct-offer position-absolute top-1 start-1">
+                                <h6 class="red-title bg-danger text-white d-inline-block mb-0 px-2 py-1 rounded-1">Sale</h6><br>
+                                <h6 class="green-title bg-success text-white d-inline-block px-2 py-1 rounded-1">10%</h6>
+                            </div> -->
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-9.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="poproduct-content">
+                                <p class="mb-0 fw-semibold">Snack & Munchies</p>
+                                <a href="javascript:void(0)" class="fw-semibold">Slurrp Millet Chocolate</a><br>
+                                <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3 (5)</p></span>
+                                <div class="poproduct-button d-flex align-items-center justify-content-between">
+                                    <h5 class="fw-semibold ">$0 <del class="text-body-tertiary">$0</del></h5>
+                                    <a href="javascript:void(0)" class="fw-semibold d-inline-block px-2 py-1 rounded-3 text-white"><i class="ri-add-line"></i> Add</a>  
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-5">
+                        <div class="poproduct-type mb-4 px-3 py-3 position-relative border rounded rounded-3 px-3 py-3 border rounded rounded-4">
+                            <div class="poproduct-offer position-absolute top-1 start-1">
+                                <!-- <h6 class="red-title bg-danger text-white d-inline-block mb-0 px-2 py-1 rounded-1">Sale</h6><br> -->
+                                <h6 class="green-title bg-success text-white d-inline-block px-2 py-1 rounded-1">25%</h6>
+                            </div>
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-10.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="poproduct-content">
+                                <p class="mb-0 fw-semibold">Bakery & Biscuits</p>
+                                <a href="javascript:void(0)" class="fw-semibold">NutriChoice Digestive</a><br>
+                                <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3 (5)</p></span>
+                                <div class="poproduct-button d-flex align-items-center justify-content-between">
+                                    <h5 class="fw-semibold ">$24 <del class="text-body-tertiary">$24</del></h5>
+                                    <a href="javascript:void(0)" class="fw-semibold d-inline-block px-2 py-1 rounded-3 text-white"><i class="ri-add-line"></i> Add</a>  
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-5">
+                        <div class="poproduct-type mb-4 px-3 py-3 position-relative border rounded rounded-3 px-3 py-3 border rounded rounded-4">
+                            <!-- <div class="poproduct-offer position-absolute top-1 start-1">
+                                <h6 class="red-title bg-danger text-white d-inline-block mb-0 px-2 py-1 rounded-1">Sale</h6><br>
+                                <h6 class="green-title bg-success text-white d-inline-block px-2 py-1 rounded-1">10%</h6>
+                            </div> -->
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-2.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="poproduct-content">
+                                <p class="mb-0 fw-semibold">Bakery & Biscuits</p>
+                                <a href="javascript:void(0)" class="fw-semibold">NutriChoice Digestive</a><br>
+                                <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3 (5)</p></span>
+                                <div class="poproduct-button d-flex align-items-center justify-content-between">
+                                    <h5 class="fw-semibold ">$24 <del class="text-body-tertiary">$24</del></h5>
+                                    <a href="javascript:void(0)" class="fw-semibold d-inline-block px-2 py-1 rounded-3 text-white"><i class="ri-add-line"></i> Add</a>  
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-5">
+                        <div class="poproduct-type mb-4 px-3 py-3 position-relative border rounded rounded-3 px-3 py-3 border rounded rounded-4">
+                            <!-- <div class="poproduct-offer position-absolute top-1 start-1">
+                                <h6 class="red-title bg-danger text-white d-inline-block mb-0 px-2 py-1 rounded-1">Sale</h6><br>
+                                <h6 class="green-title bg-success text-white d-inline-block px-2 py-1 rounded-1">10%</h6>
+                            </div> -->
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-9.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="poproduct-content">
+                                <p class="mb-0 fw-semibold">Snack & Munchies</p>
+                                <a href="javascript:void(0)" class="fw-semibold">Slurrp Millet Chocolate</a><br>
+                                <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3 (5)</p></span>
+                                <div class="poproduct-button d-flex align-items-center justify-content-between">
+                                    <h5 class="fw-semibold ">$0 <del class="text-body-tertiary">$0</del></h5>
+                                    <a href="javascript:void(0)" class="fw-semibold d-inline-block px-2 py-1 rounded-3 text-white"><i class="ri-add-line"></i> Add</a>  
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- best-sells -->
+        <section class="best-sells mt-5">
+            <div class="container">
+                <div class="best-sells-title">
+                    <h3 class="fw-semibold pb-3">Daily Best Sells</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="best-sells-img p-4">
+                            <h3 class="text-white fw-semibold">100% Organic Coffee Beans.</h3>
+                            <p class="text-white ">Get the best deal before close.</p>
+                            <a href="javascript:void(0)" class="fw-semibold px-3 py-2 rounded-3 text-white">Shop Now <i class="ri-arrow-right-line fw-light"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="best-sells-type mb-4 px-3 py-3 position-relative border rounded rounded-1 px-3 py-3 border rounded rounded-4">
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-11.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="best-sells-content">
+                                <p class="mb-0 fw-semibold">Tea, Coffee & Drinks</p>
+                                <a href="javascript:void(0)" class="fw-semibold mb-2 d-inline-block">Roast Ground Coffee</a><br>
+                                <div class="justify-content-between align-items-center d-flex">
+                                    <h5 class="fw-semibold ">$13.8 <del class="text-body-tertiary">$18</del></h5>
+                                    <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3</p></span>
+                                </div>
+                                
+                            </div>
+                            <a href="javascript:void(0)" class="best-sells-button mb-3 text-center fw-semibold d-block px-2 py-2 rounded-3 text-white"><i class="ri-add-line"></i> Add to cart</a>  
+                            <div class="best-sells-timer">
+                                <div class="row px-3 align-items-center justify-content-center">
+                                    <div class="col-4">
+                                        <div class="best-sells-timer-type text-center p-2 mb-3 border rounded rounded-3">
+                                            <h6 class="mb-0">1314</h6>
+                                            <p class="mb-0">Days</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="best-sells-timer-type text-center p-2 mb-3 border rounded rounded-3">
+                                            <h6 class="mb-0">10</h6>
+                                            <p class="mb-0">Hours</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="best-sells-timer-type text-center p-2 mb-3 border rounded rounded-3">
+                                            <h6 class="mb-0">50</h6>
+                                            <p class="mb-0">Mins</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="best-sells-timer-type text-center p-2 border rounded rounded-3">
+                                            <h6 class="mb-0">15</h6>
+                                            <p class="mb-0">Sec</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="col-lg-3">
+                        <div class="best-sells-type mb-4 px-3 py-3 position-relative border rounded rounded-1 px-3 py-3 border rounded rounded-4">
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-12.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="best-sells-content">
+                                <p class="mb-0 fw-semibold">Fruits & Vegetables</p>
+                                <a href="javascript:void(0)" class="fw-semibold mb-2 d-inline-block">Crushed Tomatoes</a><br>
+                                <div class="justify-content-between align-items-center d-flex">
+                                    <h5 class="fw-semibold ">$13.8 <del class="text-body-tertiary">$18</del></h5>
+                                    <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3</p></span>
+                                </div>
+                                
+                            </div>
+                            <a href="javascript:void(0)" class="best-sells-button mb-3 text-center fw-semibold d-block px-2 py-2 rounded-3 text-white"><i class="ri-add-line"></i> Add to cart</a>  
+                            <div class="best-sells-timer">
+                                <div class="row px-3 align-items-center justify-content-center">
+                                    <div class="col-4">
+                                        <div class="best-sells-timer-type text-center p-2 mb-3 border rounded rounded-3">
+                                            <h6 class="mb-0">1314</h6>
+                                            <p class="mb-0">Days</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="best-sells-timer-type text-center p-2 mb-3 border rounded rounded-3">
+                                            <h6 class="mb-0">10</h6>
+                                            <p class="mb-0">Hours</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="best-sells-timer-type text-center p-2 mb-3 border rounded rounded-3">
+                                            <h6 class="mb-0">50</h6>
+                                            <p class="mb-0">Mins</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="best-sells-timer-type text-center p-2 border rounded rounded-3">
+                                            <h6 class="mb-0">15</h6>
+                                            <p class="mb-0">Sec</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="col-lg-3">
+                        <div class="best-sells-type mb-4 px-3 py-3 position-relative border rounded rounded-1 px-3 py-3 border rounded rounded-4">
+                            <a href="javascript:void(0)">
+                                <img src="images/product-img-13.jpg" class="img-fluid" alt="product" name="product">
+                            </a>
+                            <div class="best-sells-content">
+                                <p class="mb-0 fw-semibold">Fruits & Vegetables</p>
+                                <a href="javascript:void(0)" class="fw-semibold mb-2 d-inline-block">Golden Pineapple</a><br>
+                                <div class="justify-content-between align-items-center d-flex">
+                                    <h5 class="fw-semibold ">$14.4 <del class="text-body-tertiary">$18</del></h5>
+                                    <span><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-fill text-warning"></i><i class="ri-star-half-fill text-warning"></i> <p class="d-inline-block ">4.3</p></span>
+                                </div>
+                                
+                            </div>
+                            <a href="javascript:void(0)" class="best-sells-button mb-3 text-center fw-semibold d-block px-2 py-2 rounded-3 text-white"><i class="ri-add-line"></i> Add to cart</a>  
+                            <div class="best-sells-timer">
+                                <div class="row px-3 align-items-center justify-content-center">
+                                    <div class="col-4">
+                                        <div class="best-sells-timer-type text-center p-2 mb-3 border rounded rounded-3">
+                                            <h6 class="mb-0">1314</h6>
+                                            <p class="mb-0">Days</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="best-sells-timer-type text-center p-2 mb-3 border rounded rounded-3">
+                                            <h6 class="mb-0">10</h6>
+                                            <p class="mb-0">Hours</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="best-sells-timer-type text-center p-2 mb-3 border rounded rounded-3">
+                                            <h6 class="mb-0">50</h6>
+                                            <p class="mb-0">Mins</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="best-sells-timer-type text-center p-2 border rounded rounded-3">
+                                            <h6 class="mb-0">15</h6>
+                                            <p class="mb-0">Sec</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <ul class="d-flex text-center opacity-0 ps-0 align-items-center justify-content-center position-absolute">
+                                <li><a href="javascript:void(0)"><i class="ri-eye-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-heart-line fw-light fs-5 p-2 border rounded-3 bg-white me-1 shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ri-arrow-left-right-line fw-light fs-5 p-2 border rounded-3 bg-white shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <!-- services -->
+        <section class="services py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="services-item">
+                            <i class="ri-time-line fs-1 mb-2 d-inline-block"></i>
+                            <h3 class="fw-bold">10 minute grocery now</h3>
+                            <p>Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="services-item">
+                            <i class="ri-gift-line fs-1 mb-2 d-inline-block"></i>
+                            <h3 class="fw-bold">Best Prices & Offers</h3>
+                            <p>Cheaper prices than your local supermarket, great cashback offers to top it off. Get best pricess & offers.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="services-item">
+                            <i class="ri-box-1-line fs-1 mb-2 d-inline-block"></i>
+                            <h3 class="fw-bold">Wide Assortment</h3>
+                            <p>Choose from 5000+ products across food, personal care, household, bakery, veg and non-veg & other categories.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="services-item">
+                            <i class="ri-exchange-2-line fs-1 mb-2 d-inline-block"></i>
+                            <h3 class="fw-bold">10 minute grocery now</h3>
+                            <p>Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="py-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h6 class="mt-5 mb-3 fw-semibold">Categories</h6>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="ps-0">
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Vegetables & Fruits</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Breakfast & instant food</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Bakery & Biscuits</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Atta, rice & dal</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Sauces & spreads</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Organic & gourmet</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Baby care</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Cleaning essentials</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Personal care</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="ps-0">
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Dairy, bread & eggs</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Cold drinks & juices</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Tea, coffee & drinks</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Masala, oil & more</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Chicken, meat & fish</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Paan corner</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Pharma & wellness</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Home & office</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Pet care</a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h6 class="mt-5 mb-3 fw-semibold">Get to know us</h6>
+                            <ul class="ps-0">
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Company</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">About</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Blog</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Help Center</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Our Value</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <h6 class="mt-5 mb-3 fw-semibold">For Consumers</h6>
+                            <ul class="ps-0">
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Payments</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Shipping</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Product Returns</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">FAQ</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Shop Checkout</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <h6 class="mt-5 mb-3 fw-semibold">Become a Shopper</h6>
+                            <ul class="ps-0">
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Shopper Opportunities</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Become a Shopper</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Earnings</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Ideas & Guides</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">New Retailers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <h6 class="mt-5 mb-3 fw-semibold">Freshcart programs</h6>
+                            <ul class="ps-0">
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Freshcart programs</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Gift Cards</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Promos & Coupons</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Freshcart Ads</a></li>
+                                <li><a href="javascript:void(0)" class="mb-2 fw-semibold d-inline-block">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="partners justify-content-between align-items-center">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="payment-partner">
+                            <ul class="ps-0 d-flex align-items-center">
+                                <li><h6 class="fw-semibold mb-0">Payment Partners</h6></li>
+                                <li><a href="javascript:void(0)" class="mx-2"><img src="images/amazonpay.svg" class="img-fluid" alt="payment-partner" name="payment-partner"></a></li>
+                                <li><a href="javascript:void(0)" class="mx-2"><img src="images/american-express.svg" class="img-fluid" alt="payment-partner" name="payment-partner"></a></li>
+                                <li><a href="javascript:void(0)" class="mx-2"><img src="images/paypal.svg" class="img-fluid" alt="payment-partner" name="payment-partner"></a></li>
+                                <li><a href="javascript:void(0)" class="mx-2"><img src="images/visa.svg" class="img-fluid" alt="payment-partner" name="payment-partner"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="app-partner align-items-right d-flex justify-content-end">
+                            <ul class="ps-0 d-flex align-items-center">
+                                <li><h6 class="fw-semibold mb-0 me-4">Get deliveries with FreshCart</h6></li>
+                                <li><a href="javascript:void(0)" class="me-3"><img src="images/googleplay-btn.svg" class="img-fluid" alt=""></a></li>
+                                <li><a href="javascript:void(0)" class="me-3"><img src="images/appstore-btn.svg" class="img-fluid" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copiright">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>© 2022 - 2025 FreshCart eCommerce HTML Template. All rights reserved. Powered by <span><a href="javascript:void(0)">Codescandy.</a></span></p>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <ul class="d-flex ps-0 ms-auto align-items-center justify-content-end">
+                            <li><p class="mb-0 me-2 d-inline-block">Follow us on</p></li>
+                            <li><a href="javascript:void(0)" class="text-body-tertiary me-2 fs-4 p-1 border rounded border-dark-subtle rounded-2"><i class="ri-facebook-circle-fill"></i></a></li>
+                            <li><a href="javascript:void(0)" class="text-body-tertiary me-2 fs-4 p-1 border rounded border-dark-subtle rounded-2"><i class="ri-twitter-fill"></i></a></li>
+                            <li><a href="javascript:void(0)" class="text-body-tertiary me-2 fs-4 p-1 border rounded border-dark-subtle rounded-2"><i class="ri-instagram-line"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+    
+</body>
+</html>

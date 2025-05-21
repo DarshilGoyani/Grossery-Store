@@ -6,6 +6,8 @@
     <title>Admin | FreshCart - eCommerce</title>
     <!-- remix-icon -->
     <link rel="stylesheet" href="remix-icon/remixicon.css" type="text/css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="css/bootstrap-icons.css" type="text/css">
     <!-- inter font family -->
     <link rel="stylesheet" href="fonts/inter-fonts/stylesheet.css" type="text/css">
     <!-- bootstrap -->
@@ -14,85 +16,307 @@
     <link rel="stylesheet" href="css/admin.css" type="text/css">
 </head>
 <body>
-    
-    
-        <aside class="px-3 position-fixed top-0 start-0">
-            <img src="images/freshcart-logo.svg" class="img-fluid z-3 position-fixed py-3" alt="logo" name="logo">
-            <a href="javascript:void(0)" class="aside-dash px-3 py-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="ri-home-9-line me-2 fw-light"></i> Dashboard</a>
+    <!-- Offcanvas Sidebar for Mobile -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarOffcanvas">
+        <div class="offcanvas-header">
+            <img src="images/freshcart-logo.svg" class="img-fluid" alt="logo" name="logo">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-2">
+            <a href="javascript:void(0)" class="aside-dash px-3 py-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-house me-2 fw-light"></i> Dashboard</a>
             <p class="fw-semibold mt-4 mb-3 ps-3">Store Managements</p>
             <ul class="ps-0">
-                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="ri-shopping-cart-2-line fw-light"></i> Products</a></li>
-                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="ri-menu-3-line fw-light"></i> Categories</a></li>
-                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="ri-briefcase-4-line fw-light"></i> Orders</a></li>
-                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="ri-store-3-line fw-light"></i> Sellers / Vendors</a></li>
-                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="ri-team-line fw-light"></i> Customers</a></li>
-                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="ri-star-line fw-light"></i> Reviews</a></li>
-                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="ri-corner-left-down-line fw-light"></i> Menu Level</a></li>
+                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-cart2 fw-light me-2 fw-light"></i> Products</a></li>
+                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-list-ul me-2 fw-light"></i> Categories</a></li>
+                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-bag me-2 fw-light"></i> Orders</a></li>
+                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-shop me-2 fw-light"></i> Sellers / Vendors</a></li>
+                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-people me-2 fw-light"></i> Customers</a></li>
+                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-star me-2 fw-light"></i> Reviews</a></li>
+                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-arrow-90deg-down me-2 fw-light"></i> Menu Level</a></li>
             </ul>
-        </aside>
-        <main class="px-4">
-                <!-- header -->
-                <header class="header py-3 justify-content-between d-flex align-items-center">
-                    <input type="search" class="px-3 py-2 border-light-subtle rounded-3 fw-semibold" placeholder="Search" >
-                    <div class="d-flex align-items-center">
-                        <i class="ri-notification-line me-4"></i>
-                        <img src="images/avatar-1.jpg" class="img-fluid rounded-circle" alt="avatar-1" name="avatar">
-                    </div>
-                </header>
+        </div>
+    </div>
 
-                <!-- banner -->
-                <section class="banner p-5 mt-4 rounded-3">
-                    <div class="container-fluid">
-                        <h1 class="fw-semibold">Welcome back! FreshCart</h1>
-                        <p class="fw-semibold">FreshCart is simple & clean design for developer and designer.</p>
-                        <a href="javascript:void(0)" class="fw-semibold text-white rounded-3 px-3 py-2 d-inline-block">Create Product</a>
+    <!-- Sidebar for Desktop -->
+    <aside class="sidebar d-none d-lg-block">
+        <img src="images/freshcart-logo.svg" class="img-fluid py-3 px-2" alt="logo" name="logo">
+        <div class="px-2">
+            <a href="javascript:void(0)" class="aside-dash px-3 py-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-house me-2 fw-light"></i> Dashboard</a>
+            <p class="fw-semibold mt-4 mb-3 ps-3">Store Managements</p>
+            <ul class="ps-0">
+                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-cart2 fw-light me-2 fw-light"></i> Products</a></li>
+                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-list-ul me-2 fw-light"></i> Categories</a></li>
+                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-bag me-2 fw-light"></i> Orders</a></li>
+                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-shop me-2 fw-light"></i> Sellers / Vendors</a></li>
+                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-people me-2 fw-light"></i> Customers</a></li>
+                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-star me-2 fw-light"></i> Reviews</a></li>
+                <li><a href="javascript:void(0)" class="px-3 py-2 mb-2 fw-semibold rounded-3 w-100 d-inline-block"><i class="bi bi-arrow-90deg-down me-2 fw-light"></i> Menu Level</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- header -->
+        <header class="header py-3 px-3 justify-content-between w-100 d-flex align-items-center">
+            <div class="d-flex align-items-center">
+                <button class="btn d-lg-none me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas">
+                    <i class="bi bi-list"></i>
+                </button>
+                <input type="search" class="px-3 py-2 border-light-subtle rounded-3 fw-semibold" placeholder="Search">
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="ri-notification-line me-4"></i>
+                <img src="images/avatar-1.jpg" class="img-fluid rounded-circle" alt="avatar-1" name="avatar">
+            </div>
+        </header>
+
+        <!-- banner -->
+        <div class="col-12 px-3">
+            <section class="banner p-5 mt-4 rounded-4">
+                <div class="container-fluid">
+                    <h1 class="fw-semibold">Welcome back! FreshCart</h1>
+                    <p class="fw-semibold">FreshCart is simple & clean design for developer and designer.</p>
+                    <a href="javascript:void(0)" class="fw-semibold d-none d-md-inline-block text-white rounded-3 px-3 py-2 d-inline-block">Create Product</a>
+                </div>
+            </section>
+        </div>
+    
+        <!-- earning -->
+        <section class="earning">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 py-4">
+                        <div class="earning-item rounded-4 shadow p-3">
+                            <div class="justify-content-between d-flex mb-2 align-items-center">
+                                <h6 class="fw-semibold">Earnings</h6>
+                                <i class="bi bi-currency-dollar fs-5 px-2 py-1 bg-danger-subtle rounded-circle"></i>
+                            </div>
+                            <h3 class="fw-bold">$93,438.78</h3>
+                            <p class="fw-semibold">Monthly revenue</p>
+                        </div>
                     </div>
-                </section>
-            
-                <!-- earning -->
-                <section class="earning">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-4 rounded-4 shadow py-4 me-2">
-                                <div class="earning-item p-3">
-                                    <div class="justify-content-between d-flex mb-2 align-items-center">
-                                        <h6 class="fw-semibold">Earnings</h6>
-                                        <i class="ri-exchange-dollar-line fs-5 px-2 py-1 bg-danger-subtle rounded-circle"></i>
+                    <div class="col-md-4 py-4">
+                        <div class="earning-item rounded-4 shadow p-3">
+                            <div class="justify-content-between d-flex mb-2 align-items-center">
+                                <h6 class="fw-semibold">Orders</h6>
+                                <i class="ri-shopping-cart-2-line fs-5 px-2 py-1 bg-warning-subtle rounded-circle"></i>
+                            </div>
+                            <h3 class="fw-bold">42,339</h3>
+                            <p class="fw-semibold">35+ New Sales</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-4">
+                        <div class="earning-item rounded-4 shadow p-3">
+                            <div class="justify-content-between d-flex mb-2 align-items-center">
+                                <h6 class="fw-semibold">Customer</h6>
+                                <i class="bi bi-people fs-5 px-2 py-1 bg-info-subtle rounded-circle"></i>
+                            </div>
+                            <h3 class="fw-bold">39,354</h3>
+                            <p class="fw-semibold">30+ new in 2 days</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- chart -->
+        <section class="chart">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 mb-3 mb-lg-0">
+                        <div class="chart-1 rounded-4 shadow p-4">
+                            <div class="chart-1-title">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-block">
+                                        <h6 class="fw-semibold mb-0">Revenue</h6>
+                                        <p>(+63%) than last year</p>
                                     </div>
-                                    <h3 class="fw-bold">$93,438.78</h3>
-                                    <p class="fw-semibold">Monthly revenue</p>
+                                    <select class="px-3 py-2 rounded-3 border-light-subtle">
+                                        <option>2019</option>
+                                        <option>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                        <option>2023</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="col-lg-4 rounded-4 shadow py-4 mx-2">
-                                <div class="earning-item p-3">
-                                    <div class="justify-content-between d-flex mb-2 align-items-center">
-                                        <h6 class="fw-semibold">Orders</h6>
-                                        <i class="ri-shopping-cart-2-line fs-5 px-2 py-1 bg-warning-subtle rounded-circle"></i>
-                                    </div>
-                                    <h3 class="fw-bold">42,339</h3>
-                                    <p class="fw-semibold">35+ New Sales</p>
-                                </div>
+                            <div id="chart1"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="chart-2 rounded-4 shadow p-4 h-100">
+                            <h6 class="mb-5">Total Sales</h6>
+                            <div id="chart2" class="d-flex align-items-center justify-content-center h-100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sales -->
+        <section class="sales">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="sales-overview my-4 p-3 shadow rounded-4">
+                            <h5 class="fw-semibold mb-4">Sales Overview</h5>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h6 class="fw-semibold">Total Profit</h6>
+                                <h6 class="d-flex fw-semibold">$1,619 <p class="mb-0 ms-1">(8.6%)</p></h6>
                             </div>
-                            <div class="col-lg-4 rounded-4 shadow py-4 ">
-                                <div class="earning-item p-3">
-                                    <div class="justify-content-between d-flex mb-2 align-items-center">
-                                        <h6 class="fw-semibold">Customer</h6>
-                                        <i class="ri-group-line fs-5 px-2 py-1 bg-info-subtle rounded-circle"></i>
-                                    </div>
-                                    <h3 class="fw-bold">39,354</h3>
-                                    <p class="fw-semibold">30+ new in 2 days</p>
-                                </div>
+                            <div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-success" style="width: 10%"></div>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h6 class="fw-semibold">Total Income</h6>
+                                <h6 class="d-flex fw-semibold">$3,571 <p class="mb-0 ms-1">(86.4%)</p></h6>
+                            </div>
+                            <div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-primary" style="width: 85%"></div>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h6 class="fw-semibold">Total Expenses</h6>
+                                <h6 class="d-flex fw-semibold ">$3,430 <p class="mb-0 ms-1">(74.5%)</p></h6>
+                            </div>
+                            <div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 25%"></div>
                             </div>
                         </div>
                     </div>
-                </section>
-        </main>
+                    <div class="col-lg-6">
+                        <div class="chart-notification d-flex p-3 my-4 rounded-4 shadow align-items-center">
+                            <i class="bi bi-bell fs-1 text-warning"></i>
+                            <div class="d-block ms-3">
+                                <h5 class="fw-semibold">Start your day with New Notification.</h5>
+                                <p class="mb-0 fw-semibold">You have <a href="javascript:void(0)" class="text-primary"> 2 new notification</a></p>
+                            </div>
+                        </div>
+                        <div class="chart-notification d-flex p-3 my-4 rounded-4 shadow align-items-center">
+                            <i class="bi bi-lightbulb fs-1 text-success"></i>
+                            <div class="d-block ms-3">
+                                <h5 class="fw-semibold">Monitor your Sales and Profitability</h5>
+                                <p class="mb-0 fw-semibold">You have <a href="javascript:void(0)" class="text-primary"> View Performance</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- order -->
+        <section class="order mb-5">
+            <div class="container-fluid">
+                <div class="order-table p-3 rounded-4 shadow">
+                    <h5 class="fw-semibold mb-4">Recent Order</h5>
+                    <div class="table-responsive">
+                        <table class="w-100">
+                            <tr class="bg-secondary-subtle">
+                                <th class="px-3 py-2 text-body-secondary fw-semibold">Order Number</th>
+                                <th class="px-3 py-2 text-body-secondary fw-semibold">Product Name</th>
+                                <th class="px-3 py-2 text-body-secondary fw-semibold">Order Date</th>
+                                <th class="px-3 py-2 text-body-secondary fw-semibold">Price</th>
+                                <th class="px-3 py-2 text-body-secondary fw-semibold">Status</th>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">#FC0005</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">Haldiram's Sev Bhujia</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">28 March 2023</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">$18.00</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold"><span class="text-success px-2 py-1 rounded-2 bg-success-subtle">Shipped</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">#FC0004</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">NutriChoice Digestive</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">24 March 2023</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">$24.00</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold"><span class="text-warning px-2 py-1 rounded-2 bg-warning-subtle">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">#FC0003</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">Onion Flavour Potato</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">8 Feb 2023</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">$9.00</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold"><span class="text-danger px-2 py-1 rounded-2 bg-danger-subtle">Cancel</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">#FC0002</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">Blueberry Greek Yogurt</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">20 Jan 2023</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">$12.00</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold"><span class="text-warning px-2 py-1 rounded-2 bg-warning-subtle">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">#FC0001</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">Slurrp Millet Chocolate</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">14 Jan 2023</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold">$8.00</td>
+                                <td class="px-3 py-2 text-body-secondary fw-semibold"><span class="text-primary px-2 py-1 rounded-2 bg-primary-subtle">Processing</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- apex chart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+        // Spline (Smoothed Line) Chart
+        var splineOptions = {
+          chart: {
+            type: 'area',
+            height: 350,
+            zoom: { enabled: false }
+          },
+          dataLabels: { enabled: false },
+          stroke: {
+            curve: 'smooth'
+          },
+          series: [{
+            name: "Visitors",
+            data: [31, 40, 28, 51, 42, 85, 77]
+          }],
+          xaxis: {
+            categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+          },
+          title: {
+            text: 'Weekly Visitors (Spline)',
+            align: 'center'
+          }
+        };
     
-   
-   
-
-
-
-    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        var splineChart = new ApexCharts(document.querySelector("#chart1"), splineOptions);
+        splineChart.render();
+    
+        // Donut Chart with Auto-Update
+        var donutOptions = {
+          chart: {
+            type: 'donut',
+            height: 350
+          },
+          labels: ['Apples', 'Bananas', 'Oranges'],
+          series: [44, 33, 23],
+          title: {
+            text: 'Fruits Distribution (Updating)',
+            align: 'center'
+          }
+        };
+    
+        var donutChart = new ApexCharts(document.querySelector("#chart2"), donutOptions);
+        donutChart.render();
+    
+        // Auto-update donut chart every 3 seconds
+        setInterval(() => {
+          const randomSeries = Array.from({ length: 3 }, () => Math.floor(Math.random() * 100));
+          donutChart.updateSeries(randomSeries);
+        }, 3000);
+    </script>
+      
+    <!-- bootstrap cdn -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

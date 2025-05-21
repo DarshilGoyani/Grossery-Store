@@ -49,7 +49,7 @@ aside a i{
     font-size: 16px;
 }
 aside .aside-dash{
-    margin-top: 75px;
+    /* margin-top: 75px; */
     color: #044504;
     background-color: #0aad0a38;
 }
@@ -73,13 +73,13 @@ aside ul li a:focus{
     width: 40px;
     height: 40px;
 }
-.header input{
+.header input , .chart select{
     border: 1px solid ;
 }
-.header input::placeholder , .header input{
+.header input::placeholder , .header input , .chart select{
     font-size: 14px;
 }
-.header input:focus{
+.header input:focus , .chart select{
     outline: none;
 }
 .header i{
@@ -103,4 +103,209 @@ aside ul li a:focus{
 .banner a:hover{
     background-color: var(--hover-color) !important;
 }
-/* earning */
+/* chart */
+.chart h6 , .sales h5 , .order h5{
+    font-size: 18px;
+}
+.chart p , .sales .sales-overview h6 , .sales .sales-overview h6 p{
+    font-size: 13px;
+}
+.chart .apexcharts-toolbar{
+    display: none;
+}
+.chart .chart-2{
+    height: 100%;
+}
+/* sales */
+.sales .progress{
+    height: 6px;
+}
+.sales .chart-notification p{
+    font-size: 14px;
+}
+/* order */
+.order table tr th , .order table tr td{
+    font-size: 14px;
+}
+.order table tr td span{
+    font-size: 11px !important;
+}
+.order table tr:hover{
+    background-color: #e5e5e5;
+}
+.main-content {
+    margin-left: 280px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 992px) {
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px dashed rgb(231, 231, 231);
+    background-color: white;
+    z-index: 1000;
+    transition: all 0.3s;
+    overflow-y: auto;
+}
+
+.sidebar a i {
+    font-size: 16px;
+}
+
+.sidebar .aside-dash {
+    /* margin-top: 75px; */
+    color: #044504;
+    background-color: #0aad0a38;
+}
+
+.sidebar p {
+    font-size: 12px;
+}
+
+.sidebar ul li a {
+    color: var(--p-color);
+}
+
+.sidebar ul li a:hover {
+    color: black;
+    background-color: #F0F3F2 !important;
+    transition-duration: 0.5s;
+}
+
+.sidebar ul li a:focus {
+    color: #044504;
+    background-color: #0aad0a38 !important;
+}
+
+/* Header */
+.header img {
+    width: 40px;
+    height: 40px;
+}
+
+.header input, .chart select {
+    border: 1px solid;
+}
+
+.header input::placeholder, .header input, .chart select {
+    font-size: 14px;
+}
+
+.header input:focus, .chart select {
+    outline: none;
+}
+
+.header i {
+    color: var(--p-color);
+}
+
+/* Banner */
+.banner {
+    background-image: url(../images/grocery-banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 260px;
+}
+
+.banner h1 {
+    font-size: 35px;
+}
+
+.banner a {
+    background-color: var(--theme-color);
+}
+
+.banner a:hover {
+    background-color: var(--hover-color) !important;
+}
+
+/* Chart */
+.chart h6, .sales h5, .order h5 {
+    font-size: 18px;
+}
+
+.chart p, .sales .sales-overview h6, .sales .sales-overview h6 p {
+    font-size: 13px;
+}
+
+.chart .apexcharts-toolbar {
+    display: none;
+}
+
+.chart .chart-2 {
+    height: 100%;
+}
+
+/* Sales */
+.sales .progress {
+    height: 6px;
+}
+
+.sales .chart-notification p {
+    font-size: 14px;
+}
+
+/* Order */
+.order table tr th, .order table tr td {
+    font-size: 14px;
+}
+
+.order table tr td span {
+    font-size: 11px !important;
+}
+
+.order table tr:hover {
+    background-color: #e5e5e5;
+}
+
+/* Offcanvas */
+.offcanvas-start {
+    width: 280px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 28px;
+    }
+    
+    .banner {
+        height: 200px;
+    }
+    
+    .earning-item {
+        margin-bottom: 15px;
+    }
+    
+    .order table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner h1 {
+        font-size: 24px;
+    }
+    
+    .header input {
+        width: 150px !important;
+    }
+    
+    .chart-1, .chart-2 {
+        margin-bottom: 15px;
+    }
+}

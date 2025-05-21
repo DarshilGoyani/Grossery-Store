@@ -94,12 +94,35 @@ header .modal .modal-body form .sign-up-btn{
     background-color: var(--theme-color);
     border-radius: 5px;
 }
-header .header-main .header-main-button a{
+header .header-main-button a{
     padding: 9px 24px;
     background-color: var(--theme-color);
 }
 header .header-main .header-main-button a:hover , header .header-main nav ul li a:hover{
     color: var(--hover-color);
+}
+header .header-main nav ul li:hover .sub-menu{
+    display: block !important;
+    transition-duration: 0.5s !important;
+}
+header .header-main nav .sub-menu ul{
+    min-width: 200px;
+}
+header .header-main nav .sub-menu ul li:hover , header .header-main nav .sub-menu ul li:hover a , header .header-main nav .mega-menu ul li:hover , header .header-main nav .mega-menu ul li:hover a{
+    color: var(--text-dark) !important;
+    background-color: #f8f9fa !important;
+}
+header .header-main nav .mega-menu ul li:hover h6{
+    background-color: white !important;
+}
+header .header-main nav .mega-menu ul li h6 , header .header-main nav .mega-menu ul li a{
+    font-size: 14px;
+}
+header .header-main nav .mega-menu ul li h6{
+    color: var(--theme-color);
+}
+header .header-main nav ul li:hover .mega-menu{
+    display: block !important;
 }
 /* aside */
 aside{

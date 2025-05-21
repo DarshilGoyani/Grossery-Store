@@ -88,7 +88,29 @@ header .modal .modal-body form .sign-up-btn{
     background-color: var(--theme-color);
     border-radius: 5px;
 }
-header .header-main-button a{
+header .modal input{
+    border: 1px solid rgb(227, 225, 225);
+}
+header .header-middle .modal input , header .header-middle .modal input::placeholder{
+    font-size: 14px;
+}
+header .header-middle .modal input:focus{
+    outline: none;
+}
+header .header-middle p a{
+    color: var(--theme-color);
+}
+header .modal .modal-header{
+    border-bottom: none;
+}
+header .header-middle .modal p , header .header-middle .modal p a{
+    font-size: 12px;
+}
+header .modal .modal-body form .sign-up-btn{
+    background-color: var(--theme-color);
+    border-radius: 5px;
+}
+header .header-main .header-main-button a{
     padding: 9px 24px;
     background-color: var(--theme-color);
 }
@@ -118,26 +140,89 @@ header .header-main nav .mega-menu ul li h6{
 header .header-main nav ul li:hover .mega-menu{
     display: block !important;
 }
-
-/* wishlist */
-.wishlist table tr td small{
-    font-size: 12px !important;
-    color: var(--p-color) !important;
+/* product */
+.product .product-gallary img{
+    width: 122px;
+    height: 91px;
 }
-.wishlist table tr td span{
+.product h1{
+    font-size: 35px;
+}
+.product .product-title a{
+    color: var(--theme-color);
+}
+.product .product-title i{
+    font-size: 12px;
+}
+.product .product-title h5 , .product .product-title del{
+    font-size: 21px;
+}
+.product .product-title del{
+    color: var(--p-color);
+}
+.product .product-conti a:focus{
+    background-color: #889397 !important;
+    color: white !important;
+    transition-duration: 0.3s;
+}
+.product .cart-btn a{
+    background-color: var(--theme-color);
+}
+.product .cart-btn a:hover{
+    background-color: var(--hover-color) !important;
+}
+.product table tr td{
+    font-size: 14px;
+}
+/* about */
+.about a{
+    color: var(--theme-color);
+    border-bottom: 2px solid var(--theme-color);
+}
+/* popular product */
+.releted .poproduct-type:hover , .best-sells .best-sells-type:hover{
+    border: 1px solid var(--hover-color) !important;
+    transition-duration: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.releted .poproduct-type:hover ul , .best-sells .best-sells-type:hover ul{
+    opacity: 1 !important;
+}
+.best-sells .best-sells-type ul li:hover a i{
+    border: 1px solid var(--hover-color) !important;
+    background-color: var(--hover-color) !important;
+    color: white;
+    transition-duration: 0.5s;
+}
+.releted .poproduct-type .red-title , .releted .poproduct-type .green-title{
     font-size: 10px;
 }
-.wishlist table tr td button{
+.releted .poproduct-type .poproduct-content span i , .releted .poproduct-type .poproduct-content span p{
     font-size: 12px;
-    background-color: var(--theme-color);
-    border: none;
 }
-.wishlist table tr td button:hover{
+.releted .poproduct-type .poproduct-content h5{
+    font-size: 14px;
+}
+.releted .poproduct-content .poproduct-button a , .best-sells .best-sells-button{
+    background-color: var(--theme-color);
+    font-size: 12px;
+}
+.releted .poproduct-content .poproduct-button a:hover{
     background-color: var(--hover-color);
 }
-.form-check-input:checked[type=checkbox]{
-    background-color: var(--theme-color) !important;
-    border: none;
+.releted .poproduct-content a:hover{
+    color: var(--hover-color);
+}
+.releted ul , .best-sells .best-sells-type ul{
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.releted ul li:hover a i{
+    color: white;
+    background-color: var(--hover-color) !important;
+    border-color: var(--hover-color) !important;
+    transition-duration: 0.5s;
 }
 
 
